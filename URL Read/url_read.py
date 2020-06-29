@@ -12,5 +12,6 @@ keyword = 'Hello'
 # Print the content
 print(content.text)
 
+# Search for the keyword and print a statement if it found
 if keyword in content.text:
    print("Keyword detected.")
