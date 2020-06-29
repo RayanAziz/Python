@@ -1,7 +1,7 @@
 from urllib.request import urlopen
 
 # URL to read from
-url = "http://textfiles.com/adventure/aencounter.txt"
+url = "https://raw.githubusercontent.com/RayanGary/Python/master/URL%20Read/example.txt"
 
 file = urlopen(url)
 
