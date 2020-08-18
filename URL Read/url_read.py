@@ -1,17 +1,23 @@
-# Used to make requests
+# This script was written to prove that mecai.org is just a shell organization that charges $100 to issue fake certificates that can be easily extracted.
 import requests
 
-# The URL to read from
-URL = 'https://raw.githubusercontent.com/RayanGary/Python/master/URL%20Read/example.txt'
+# Base URL
+URL = "https://www.mecai.org/cr/"
 
-# Fetch the content from the URL
-content = requests.get(URL)
+# Counter for certificate groups 
+count = 0
 
-keyword = 'Hello'
+print(URL)
 
-# Print the content
-print(content.text)
+# Try numbers 0 to 1000 in the URL
+for cr in range (0, 1000):
+	link = URL
+	link += str(cr)
+	link += ".php"
+	content = requests.get(link)
+	keyword = 'Download'
 
-# Search for the keyword and print a statement if it found
-if keyword in content.text:
-   print("Keyword detected.")
+	if keyword in content.text:
+		print("Certificate group found: ", link)
+		count = count + 1
+print ("Number of certificate groups found: ", count)
