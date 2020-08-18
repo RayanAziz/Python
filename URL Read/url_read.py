@@ -1,4 +1,4 @@
-# This script was written to prove that mecai.org is just a shell organization that charges $100 to issue fake certificates that can be easily extracted.
+# I wrote this script to prove that mecai.org is just a shell organization that charges $100 to issue fake certificates that can be easily extracted.
 import requests
 
 # Base URL
