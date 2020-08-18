@@ -4,7 +4,7 @@ import requests
 # Base URL
 URL = "https://www.mecai.org/cr/"
 
-# Counter for certificate groups 
+# Counter for certificate groups found
 count = 0
 
 print(URL)
