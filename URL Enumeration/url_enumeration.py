@@ -13,13 +13,11 @@ print(URL)
 
 # Try numbers 0 to 1000 in the URL
 for cr in range (0, 1000):
-	link = URL
-	link += str(cr)
-	link += ".php"
+	URL += str(cr)+".php"
 	content = requests.get(link)
 	keyword = 'Download'
 
 	if keyword in content.text:
-		print("Certificate group found: ", link)
+		print("Certificate group found: " + URL)
 		count = count + 1
 print ("Number of certificate groups found: ", count)
