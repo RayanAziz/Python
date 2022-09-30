@@ -14,7 +14,7 @@ print(URL)
 # Try numbers 0 to 1000 in the URL
 for cr in range (0, 1000):
 	URL += str(cr)+".php"
-	content = requests.get(link)
+	content = requests.get(URL)
 	keyword = 'Download'
 
 	if keyword in content.text:
